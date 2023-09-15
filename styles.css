@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.header {
+    margin-bottom: 2rem;
+}
+
+.header h1 {
+    color: #0a58ca;
+    font-size: 2.5rem;
+}
+
+.transfer {
+    width: 100%;
+    max-width: 500px;
+    background: #ffffff;
+    border: 1px solid #e8e8e8;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.first-transfer, .second-transfer {
+    display: flex;
+    flex-direction: column;
+}
+
+.first-transfer p, .second-transfer p {
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.parent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #e8e8e8;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+.input {
+    border: 2px solid #006efd;
+    border-radius: 5px;
+    padding: 10px;
+    flex-grow: 1;
+    outline: none;
+}
+
+.input:focus {
+    outline: 2px solid #0a58ca;
+}
+
+.select {
+    border: 2px solid #e8e8e8;
+    margin-left: 1rem;
+    outline: none;
+    border: none;
+    background: transparent;
+    font-size: 1rem;
+    color: #0a58ca;
+}
+
+select {
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    background: #f8f9fa;
+    color: #0a58ca;
+    border-color: #3c6fb9;
+    font-size: 1em;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+select:focus {
+    border-color: #0a58ca;
+    box-shadow: 0 0 5px #0a58ca;
+}
+
+
+select:after {
+    content: "▼";
+    font-size: 0.8em;
+    right: 1em;
+    top: 50%;
+    position: absolute;
+    pointer-events: none;
+    transform: translateY(-50%);
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    background: #0a58ca;
+    border: 1px solid #000000;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+button:hover {
+    background: #0a58ca;
+    opacity: 0.9;
+}
